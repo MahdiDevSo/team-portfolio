@@ -47,10 +47,57 @@
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <button id="contactBtn">Say Hello</button>
-        <p id="message" role="status"></p>
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <span class="eyebrow">GET IN TOUCH</span>
+          <h2>Let's Work Together</h2>
+          <p class="contact-intro">
+            Have a project in mind or want to collaborate? We'd love to hear
+            from you.
+          </p>
+
+          <div class="contact-info">
+            <a href="mailto:team@example.com"> Email: team@example.com </a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore Our GitHub
+            </a>
+          </div>
+
+          <form id="contact-form">
+            <label for="name">Full Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="email">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>
