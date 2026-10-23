@@ -3,125 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Portfolio</title>
+    <title>DevTeam | Software Development Team</title>
+    <meta
+      name="description"
+      content="We build practical, accessible web software."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main">
         <a href="#home" class="logo">DevTeam</a>
         <div class="links">
-          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#features">Approach</a>
+          <a class="nav-cta" href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
     <main>
       <section id="home" class="hero">
-        <p class="label">SOFTWARE DEVELOPMENT TEAM</p>
-        <h1>We build modern digital experiences.</h1>
-        <p>Developing practical, accessible web solutions.</p>
-        <a class="button" href="#projects">Our Projects</a>
-      </section>
-
-      <section id="about">
-        <h2>About Us</h2>
-        <p>We are developers who love building useful software.</p>
-      </section>
-
-      <section id="projects">
-        <h2>Our Projects</h2>
-        <div class="grid">
-          <article>
-            <h3>Expense Tracker</h3>
-            <p>Manage your daily expenses.</p>
-          </article>
-          <article>
-            <h3>Task Manager</h3>
-            <p>Organize your work efficiently.</p>
-          </article>
+        <div class="container hero-grid">
+          <div>
+            <h1>We build modern digital experiences.</h1>
+            <p class="lead">
+              A software development team creating practical, accessible web
+              solutions.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#projects">View our projects</a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <div class="code-card" aria-hidden="true">
+            <div class="code-bar"><i></i><i></i><i></i></div>
+            <pre><code><span class="c"># team.config</span>
+<span class="k">focus</span>:    web apps
+<span class="k">quality</span>:  clean, tested code
+<span class="k">design</span>:   responsive, accessible
+<span class="k">status</span>:   <span class="ok">open for projects</span></code></pre>
+          </div>
         </div>
       </section>
 
-      <section id="features" class="features">
-        <div class="section-container">
-          <div class="section-heading">
-            <span class="eyebrow">WHY CHOOSE OUR TEAM</span>
-            <h2>What We Bring to the Table</h2>
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <h2>About us</h2>
+          <p class="lead">
+            We are developers who love building useful software. We keep things
+            simple, communicate openly, and ship work people can rely on.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2>Our projects</h2>
+          <div class="grid-2">
+            <article class="card">
+              <h3>Expense Tracker</h3>
+              <p>Manage your daily expenses.</p>
+            </article>
+            <article class="card">
+              <h3>Task Manager</h3>
+              <p>Organize your work efficiently.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>What we bring to the table</h2>
             <p>
-              We combine technical skills, creativity, and teamwork to build
+              We combine technical skill, creativity, and teamwork to build
               meaningful digital solutions.
             </p>
           </div>
-
-          <div class="features-grid">
-            <article class="feature-card">
-              <span class="feature-icon" aria-hidden="true">01</span>
-              <h3>Clean Code</h3>
-              <p>We write maintainable, reliable, and scalable code.</p>
+          <div class="grid-4">
+            <article class="feature">
+              <h3>Clean code</h3>
+              <p>Maintainable, reliable, and scalable by default.</p>
             </article>
-
-            <article class="feature-card">
-              <span class="feature-icon" aria-hidden="true">02</span>
-              <h3>Team Collaboration</h3>
-              <p>We communicate, share ideas, and solve problems together.</p>
+            <article class="feature">
+              <h3>Team collaboration</h3>
+              <p>We share ideas and solve problems together.</p>
             </article>
-
-            <article class="feature-card">
-              <span class="feature-icon" aria-hidden="true">03</span>
-              <h3>Responsive Design</h3>
-              <p>We create experiences that work across all devices.</p>
+            <article class="feature">
+              <h3>Responsive design</h3>
+              <p>Experiences that work across every device.</p>
             </article>
-
-            <article class="feature-card">
-              <span class="feature-icon" aria-hidden="true">04</span>
-              <h3>Creative Solutions</h3>
-              <p>We turn real-world challenges into practical projects.</p>
+            <article class="feature">
+              <h3>Creative solutions</h3>
+              <p>Real-world challenges turned into practical projects.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact">
-        <div class="contact-container">
-          <span class="eyebrow">GET IN TOUCH</span>
-          <h2>Let's Work Together</h2>
-          <p class="contact-intro">
-            Have a project in mind or want to collaborate? We'd love to hear
-            from you.
-          </p>
-
-          <div class="contact-info">
-            <a href="mailto:team@example.com"> Email: team@example.com </a>
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Explore Our GitHub
-            </a>
+      <section id="contact" class="section alt">
+        <div class="container contact-grid">
+          <div>
+            <h2>Let's work together</h2>
+            <p class="lead">
+              Have a project in mind or want to collaborate? We'd love to hear
+              from you.
+            </p>
+            <ul class="contact-links">
+              <li><a href="mailto:team@example.com">team@example.com</a></li>
+              <li>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
           </div>
 
-          <form id="contact-form">
-            <label for="name">Full Name</label>
+          <form id="contact-form" novalidate>
+            <label for="name">Full name</label>
             <input
               id="name"
               name="name"
               type="text"
               placeholder="Your name"
+              autocomplete="name"
               required
             />
 
-            <label for="email">Email Address</label>
+            <label for="email">Email address</label>
             <input
               id="email"
               name="email"
               type="email"
               placeholder="you@example.com"
+              autocomplete="email"
               required
             />
 
@@ -130,56 +158,51 @@
               id="message"
               name="message"
               rows="5"
-              placeholder="Your message"
+              placeholder="How can we help?"
               required
             ></textarea>
 
-            <button type="submit">Send Message</button>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="section-container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <h2>Team<span>Portfolio</span></h2>
-            <p>
-              A passionate team of developers building creative digital
-              experiences through code and collaboration.
-            </p>
-          </div>
-
-          <nav aria-label="Footer navigation">
-            <h3>Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <div class="footer-links">
-            <h3>Connect</h3>
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-            <a href="mailto:team@example.com">Email Us</a>
-          </div>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="logo">DevTeam</a>
+          <p>
+            Developers building creative digital experiences through code and
+            collaboration.
+          </p>
         </div>
-
-        <div class="footer-bottom">
-          <p>&copy; 2026 Team Portfolio. All rights reserved.</p>
+        <nav aria-label="Footer">
+          <h3>Pages</h3>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-col">
+          <h3>Connect</h3>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a href="mailto:team@example.com">Email us</a>
         </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 DevTeam. All rights reserved.</p>
       </div>
     </footer>
   </body>
