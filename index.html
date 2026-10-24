@@ -167,6 +167,69 @@
           </form>
         </div>
       </section>
+
+      <section class="form-panel" aria-labelledby="login-title">
+        <div class="login-card">
+          <div class="form-heading">
+            <span class="form-eyebrow">TEAM WORKSPACE</span>
+            <h2 id="login-title">Welcome back</h2>
+            <p>Enter your credentials to access your account.</p>
+          </div>
+
+          <!-- Connect to a real backend before production -->
+          <form action="/api/auth/login" method="post">
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@devteam.com"
+                autocomplete="username"
+                maxlength="254"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <div class="label-row">
+                <label for="password">Password</label>
+                <a href="/forgot-password" class="forgot-link">
+                  Forgot password?
+                </a>
+              </div>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+              />
+            </div>
+
+            <div class="form-options">
+              <label class="checkbox-label">
+                <input type="checkbox" name="rememberMe" value="true" />
+                <span>Remember me</span>
+              </label>
+            </div>
+
+            <button type="submit" class="login-button">
+              Sign In
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </form>
+
+          <p class="help-text">
+            Don't have an account?
+            <a href="mailto:admin@example.com">Contact administrator</a>
+          </p>
+        </div>
+
+        <p class="form-footer">Secure access for authorized DevTeam members.</p>
+      </section>
     </main>
 
     <footer class="site-footer">
